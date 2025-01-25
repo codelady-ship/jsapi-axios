@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light Mode (default) */
+body {
+    color: black;
+    transition: background-color 0.3s;
+    background-color: antiquewhite;
+    position: relative;
+}
+
+button {
+    padding: 5px;
+    background-color: #faf9fa;
+    border-radius: 10%;
+    color: rgb(10, 1, 1);
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+button:hover,.header a:hover {
+    background-color: rgb(250, 206, 148);
+}
+
+.productContainer {
+    margin-top: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+/*productIdContainer*/
+
+/* Dark Mode */
+body.dark {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark button,body.dark .header a{
+    color: rgb(5, 5, 5);
+    background-color: white; 
+    
+}
+
+body.dark button:hover,body.dark .header a:hover{
+    background-color: rgb(250, 206, 148);
+    color: #070308;
+}
+
+body.dark .productContainer {
+    background-color: #1e1e1e;
+}
+
+body.dark .productContainer a, 
+body.dark .header .title,body.dark .fordark h3 ,body.dark .fordark h2,body.dark .dark{
+    color: white;
+}
+
+/* Loader*/
+.loader {
+    display: none;
+    text-align: center;
+    font-size: 40px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    color: #0d0d0e;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.title {
+    color: #070308;
+    margin-top: 20px;
+}
+
+.header .title {
+    font-size: 30px;
+    font-weight: bold;
+}
+.header a{
+    text-align: center;
+    color: #0e0d0e;
+    background-color: #faf9fa;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 10%;
+    border: 1px solid;
+    cursor: pointer;
+    padding: 0.5%;
+    margin: 0px 18px 0 10px;
+}
+
+/*product tek verilerse*/
+.card {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card .flex {
+    display: flex;
+    gap: 20px; /* Aralarındakı məsafəni tənzimləyirik */
+}
+
+.card img {
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    margin-left: 50px;
+}
+
+.card .border {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.card .text-body-color {
+    color: #333;
+}
+
+.card .gap-8 {
+    gap: 50px;
+}
